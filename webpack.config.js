@@ -26,17 +26,13 @@ module.exports = {
             loader: 'babel-loader',
             options: {
               presets: [
-                ["@babel/preset-env", { "useBuiltIns": "usage" }],
+                ["@babel/preset-env", { "useBuiltIns": "entry" }],
               ],
+              plugins: [
+                '@babel/plugin-transform-parameters'
+              ]
             }
           },
-        ]
-      }, {
-        test: /\.css$/,
-        exclude: /(node_modules)/,
-        use: [
-          'style-loader',
-          'css-loader',
         ]
       }
     ]
