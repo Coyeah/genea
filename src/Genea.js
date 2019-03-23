@@ -93,6 +93,23 @@ class Genea {
     return this.populationBreed();
   }
 
+  populationBreedforStep () {
+    if (this.judge()) return;
+    this.currentGeneration++;
+    let oldPopulations = this.populations;
+    let newPopulations = [];
+    for (let i = 0, len = oldPopulations.length; i < len; i++) {
+      let father = this.rotate();
+      let mother = this.rotate();
+      let child = this.crossOver(father, mother);
+      child = this.mutate(child);
+      newPopulations.push(child);
+    }
+    this.populations = newPopulations;
+    this.makeFitnesses();
+    this.onGeneration(this.currentGeneration, this.populations, this.fitnesses);
+  }
+
   rotate () {
     let pos = Math.random();
     let soFar = 0;
