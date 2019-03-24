@@ -17,7 +17,7 @@ const run = require('./run');
 let isRunning = false;
 let history = [];
 let target = document.getElementById('genea-text');
-
+let times = document.getElementById('times');
 play ();
 
 target.addEventListener('click', function () {
@@ -28,6 +28,7 @@ target.addEventListener('click', function () {
 
 function play () {
   history = run('You are more powerful than any other person.').history;
+  times.innerHTML = history.length;
   isRunning = true;
   const step = () => {
     setTimeout(() => {

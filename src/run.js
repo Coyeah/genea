@@ -10,7 +10,7 @@ function run (str) {
     mutateProbability: 0.5,
     doneFitness: 1,
     populationSize: 200,
-    generationsSize: 4000,
+    generationsSize: 1500,
     getFitness: function (gene) {
       let count = 0;
       for (let i = 0, len = gene.length; i < len; i++) {
