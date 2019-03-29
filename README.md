@@ -10,7 +10,7 @@
 
 ## 图解
 
-[流程图解](https://github.com/Coyeah/genea/blob/master/flow.jpg)
+![流程图解](https://github.com/Coyeah/genea/blob/master/flow.jpg)
 
 ## 算法代码中出现的关键词，
 
