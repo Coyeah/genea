@@ -7,8 +7,8 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname + '/dist'),
-    filename: '[name].js',
-    chunkFilename: '[name].js',
+    filename: '[name].genea.js',
+    chunkFilename: '[name].genea.js',
     publicPath: '/',
   },
   resolve: {

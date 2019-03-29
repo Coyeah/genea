@@ -10,19 +10,7 @@
 
 ## 图解
 
-```flow
-st=>start: 初始化种群
-op1=>operation: 计算基因健康比
-cond=>condition: 未出现目标个体
-op2=>operation: 随机选择父母
-op3=>operation: 基因对半组合
-op4=>operation: 孩子基因变异
-op5=>operation: 组合成新种群
-e=>end: 结束算法
-st->op1->cond->op2->op3->op4->op5->op1
-cond(yes)->op2
-cond(no)->e
-```
+[流程图解](https://github.com/Coyeah/genea/blob/master/flow.jpg)
 
 ## 算法代码中出现的关键词，
 
